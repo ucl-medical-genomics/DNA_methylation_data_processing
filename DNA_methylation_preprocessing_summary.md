@@ -111,7 +111,7 @@ Probes meeting the following criteria are removed from all samples:
 *   Detection p-values > 0.01 in ≥ 1 sample or more stringent thresholds as recently suggested<sup>12,13</sup>
 *   Bead count < 3 in ≥ 5% of the samples
 *   Ambiguous genomic locations (cross-hybridization) as provided by Zhou _et al._<sup>14</sup>
-*   SNPs of the corresponding population provided by Zhou _et al.<sup>14</sup>
+*   SNPs of the corresponding population provided by Zhou _et al._<sup>14</sup>
 *   Non-cg probes
 *   Sex chromosomes (unless they are needed for specific analyses)
 *   Non-variable probes (optional, only if required for specific reasons)
