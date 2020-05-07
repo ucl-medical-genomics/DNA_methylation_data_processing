@@ -87,7 +87,7 @@ Furthermore, control probes plots as provided by Illumina GenomeStudio<sup>10</s
 
 ### 3.3 Identification of sample mismatches
 
-The `Minfi`, `RnBeads`, `ENmix` and `ewastools` packages further provide the option to identify potential sample mix-ups using high-frequency SNP probes. For the same purpose of detecting possible mismatches, the sex of the sample donor can be determined based on the methylation signal at sex chromosomes. Sample contamination can also be assessed with `ewastools`.
+The `Minfi`, `RnBeads`, `ENmix` and `ewastools` packages further provide the option to identify potential sample mix-ups using high-frequency SNP probes. For the same purpose of detecting possible mismatches, the sex of the sample donor can be determined based on the methylation signal at sex chromosomes. Sample contamination can be assessed with `ewastools`.
 
 ### 3.4 Quality assessment based on all cg probes used for downstream analyses
 
