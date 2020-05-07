@@ -169,11 +169,11 @@ ComBat is the most widely used method for batch effect correction. It is impleme
 
 When working with composite samples such as whole blood, peripheral blood mononuclear cells (PBMCs), or brain tissue, cell composition differences across samples may need to be corrected. The most common reference-based method to assess and correct for subpopulation differences is **Houseman’s algorithm<sup>34</sup>** in combination with a blood cell reference dataset of the six most common white blood cell types<sup>35</sup> available in `minfi`, `ChAMP` and `RnBeads`. A newer blood cell reference was published in 2018<sup>36</sup>. Here, blood cells were isolated from 31 male and six female healthy donors while for the previous reference dataset cells were obtained from six adult males.
 
-Reference-free methods also exist<sup>37–41</sup>. The results of the correction should be assessed visually by plotting the cell type distributions per sample, mean cell type distributions per group, and by repeating the quality assessment plots enlisted in section 3.4. 
+Reference-free methods also exist<sup>37–41</sup>. The results of the correction should be assessed visually by plotting the cell type distributions per sample, mean cell type distributions per group, and by repeating the quality assessment plots that are listed in section 3.4. 
 
 Two interesting new methods to identify the cell types driving differential DNA methylation signal in composite samples such as whole blood have recently been developed: **CellDMC** (DMC = <ins>D</ins>ifferentially <ins>M</ins>ethylated <ins>C</ins>ytosines)<sup>42</sup> and **TCA** (<ins>T</ins>ensor <ins>C</ins>omposition <ins>A</ins>nalysis)<sup>43</sup>.
 
-## 4 Sample filtering
+## 8 Sample filtering
 
 Based on the initial quality assessment, the control probe plots, and the visual inspection of all global plots (densities, PCA, MDS and hierarchical clusterings, see section 3.4) performed before and after each preprocessing step, samples that turn out to be outliers corresponding to multiple measurements and plots might be removed from the dataset for downstream analyses. 
 
@@ -183,7 +183,7 @@ To further aid the detection of potential outlier samples, the following functio
 *   `outlyx()` of the R package `wateRmelon`
 *   The locFDR outlier detection method as described in Hannum _et al.,_ Mol Cell, 2013<sup>44</sup>
 
-## 8 Beta- and M-value conversion
+## 9 Beta- and M-value conversion
 
 As mentioned, some methods require Beta-values as input. M-values can be converted into Beta-values and vice versa using the following functions implemented in `RnBeads:`
 
@@ -213,7 +213,7 @@ As mentioned, some methods require Beta-values as input. M-values can be convert
 
 ```
 
-## 9 Additional notes
+## 10 Additional notes
 
 M-values are used for all downstream statistical analyses such as differential mean methylation or analyses of variability and epigenetic drift. Beta-values are only used for the visualization of DNA methylation patterns.
 
