@@ -316,4 +316,4 @@ An exception are epigenetic clocks to perform epigenetic age estimations<sup>45â
 
 47.	Horvath, S. _et al._ Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies. _Aging (Albany NY)_ **10,** 1758â€“75 (2018).
 
-48.	Lu, A. T. _et al._ DNA methylation GrimAge strongly predicts lifespan and healthspan. _Aging (Albany NY)_ (2018).
+48.	Lu, A. T. _et al._ DNA methylation GrimAge strongly predicts lifespan and healthspan. _Aging (Albany NY)_ **11,** 303-327 (2019).
