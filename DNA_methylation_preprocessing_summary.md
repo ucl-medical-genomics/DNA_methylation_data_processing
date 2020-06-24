@@ -6,7 +6,7 @@
 *[s.ecker@ucl.ac.uk](mailto:s.ecker@ucl.ac.uk)*\
 ***Medical Genomics, UCL Cancer Institute, London, UK***
 
-*Last updated: 07 May 2020*
+*Last updated: 24 Jun 2020*
 
 ***
 
@@ -84,6 +84,8 @@ Furthermore, control probes plots as provided by Illumina GenomeStudio<sup>10</s
 *   Norm G red and green
 *   Norm T red and green
 *   Norm ACGT red and green
+
+An alternative version of these plots can be generated with `shinyMethyl`<sup>12</sup>, an interactive tool providing a convinient way of identifying potentially problematic samples. The package also provides the possibility to visually inspect the distribution of covariates across slides (currently not working for EPIC).
 
 ### 3.3 Identification of sample mismatches
 
@@ -246,74 +248,76 @@ An exception are epigenetic clocks to perform epigenetic age estimations<sup>45�
 
 12.	Lehne, B. _et al._ A coherent approach for analysis of the Illumina HumanMethylation450 BeadChip improves data quality and performance in epigenome-wide association studies. _Genome Biol_ **16,** 37 (2015).
 
-13.	Heiss, J. A. & Just, A. C. Guidance on filtering DNA methylation microarray probes by detection p-values. _bioRxiv_ (2018). doi:10.1101/245217
+13. Fortin J., Fertig E. J. & Hansen K. D. shinyMethyl: interactive quality control of Illumina 450k DNA methylation arrays in R. _F1000Research_, **3,** 175 (2014).
 
-14.	Zhou, W., Laird, P. W. & Shen, H. Comprehensive characterization, annotation and innovative use of Infinium DNA methylation BeadChip probes. _Nucleic Acids Res_ **45,** e22 (2017).
+14.	Heiss, J. A. & Just, A. C. Improved filtering of DNA methylation microarray data by detection p values and its impact on downstream analyses. _Clin Epigenetics_ **11,** 15 (2019).
 
-15.	Hicks, S. & Irizarry, R. Quantro: a Data-Driven Approach To Guide the Choice of an Appropriate Normalization Method. _Genome Biol_ **16,** 117 (2015).
+15.	Zhou, W., Laird, P. W. & Shen, H. Comprehensive characterization, annotation and innovative use of Infinium DNA methylation BeadChip probes. _Nucleic Acids Res_ **45,** e22 (2017).
 
-16.	Du, P., Kibbe, W. A. & Lin, S. M. lumi: A pipeline for processing Illumina microarray. _Bioinformatics_ **24,** 1547–8 (2008).
+16.	Hicks, S. & Irizarry, R. Quantro: a Data-Driven Approach To Guide the Choice of an Appropriate Normalization Method. _Genome Biol_ **16,** 117 (2015).
 
-17.	Dedeurwaerder, S. _et al._ Evaluation of the Infinium Methylation 450K technology. _Epigenomics_ **3,** 771–784 (2011).
+17.	Du, P., Kibbe, W. A. & Lin, S. M. lumi: A pipeline for processing Illumina microarray. _Bioinformatics_ **24,** 1547–8 (2008).
 
-18.	Touleimat, N. & Tost, J. Complete pipeline for Infinium® Human Methylation 450K BeadChip data processing using subset quantile normalization for accurate DNA methylation estimation. _Epigenomics_ **4,** 325–41 (2012).
+18.	Dedeurwaerder, S. _et al._ Evaluation of the Infinium Methylation 450K technology. _Epigenomics_ **3,** 771–784 (2011).
 
-19.	Maksimovic, J., Gordon, L. & Oshlack, A. SWAN: Subset-quantile Within Array Normalization for Illumina Infinium HumanMethylation450 BeadChips. _Genome Biol_ **13,** R44 (2012).
+19.	Touleimat, N. & Tost, J. Complete pipeline for Infinium® Human Methylation 450K BeadChip data processing using subset quantile normalization for accurate DNA methylation estimation. _Epigenomics_ **4,** 325–41 (2012).
 
-20.	Teschendorff, A. E. _et al._ A beta-mixture quantile normalization method for correcting probe design bias in Illumina Infinium 450 k DNA methylation data. _Bioinformatics_ **29,** 189–96 (2013).
+20.	Maksimovic, J., Gordon, L. & Oshlack, A. SWAN: Subset-quantile Within Array Normalization for Illumina Infinium HumanMethylation450 BeadChips. _Genome Biol_ **13,** R44 (2012).
 
-21.	Triche, T. J., Weisenberger, D. J., Van Den Berg, D., Laird, P. W. & Siegmund, K. D. Low-level processing of Illumina Infinium DNA Methylation BeadArrays. _Nucleic Acids Res_ **41,** e90 (2013).
+21.	Teschendorff, A. E. _et al._ A beta-mixture quantile normalization method for correcting probe design bias in Illumina Infinium 450 k DNA methylation data. _Bioinformatics_ **29,** 189–96 (2013).
 
-22.	Pidsley, R. _et al._ A data-driven approach to preprocessing Illumina 450K methylation array data. _BMC Genomics_ **14,** 293 (2013).
+22.	Triche, T. J., Weisenberger, D. J., Van Den Berg, D., Laird, P. W. & Siegmund, K. D. Low-level processing of Illumina Infinium DNA Methylation BeadArrays. _Nucleic Acids Res_ **41,** e90 (2013).
 
-23.	Fortin, J.-P. _et al._ Functional normalization of 450k methylation array data improves replication in large cancer studies. _Genome Biol_ **15,** 503 (2014).
+23.	Pidsley, R. _et al._ A data-driven approach to preprocessing Illumina 450K methylation array data. _BMC Genomics_ **14,** 293 (2013).
 
-24.	Niu, L., Xu, Z. & Taylor, J. A. RCP: A novel probe design bias correction method for Illumina Methylation BeadChip. _Bioinformatics_ **32,** 2659–63 (2016).
+24.	Fortin, J.-P. _et al._ Functional normalization of 450k methylation array data improves replication in large cancer studies. _Genome Biol_ **15,** 503 (2014).
 
-25.	Xu, Z., Langie, S. A. S., De Boever, P., Taylor, J. A. & Niu, L. RELIC: A novel dye-bias correction method for Illumina Methylation BeadChip. _BMC Genomics_ **18,** 4 (2017).
+25.	Niu, L., Xu, Z. & Taylor, J. A. RCP: A novel probe design bias correction method for Illumina Methylation BeadChip. _Bioinformatics_ **32,** 2659–63 (2016).
 
-26.	Zhou, W., Triche, T. J., Laird, P. W. & Shen, H. SeSAMe: reducing artifactual detection of DNA methylation by Infinium BeadChips in genomic deletions. _Nucleic Acids Res_ **46,** e123 (2018).
+26.	Xu, Z., Langie, S. A. S., De Boever, P., Taylor, J. A. & Niu, L. RELIC: A novel dye-bias correction method for Illumina Methylation BeadChip. _BMC Genomics_ **18,** 4 (2017).
 
-27.	Marabita, F. _et al._ An evaluation of analysis pipelines for DNA methylation profiling using the illumina humanmethylation450 BeadChip platform. _Epigenetics_ **8,** 333–46 (2013).
+27.	Zhou, W., Triche, T. J., Laird, P. W. & Shen, H. SeSAMe: reducing artifactual detection of DNA methylation by Infinium BeadChips in genomic deletions. _Nucleic Acids Res_ **46,** e123 (2018).
 
-28.	Yousefi, P. _et al._ Considerations for normalization of DNA methylation data by Illumina 450K BeadChip assay in population studies. _Epigenetics_ **8,** 1141–52 (2013).
+28.	Marabita, F. _et al._ An evaluation of analysis pipelines for DNA methylation profiling using the illumina humanmethylation450 BeadChip platform. _Epigenetics_ **8,** 333–46 (2013).
 
-29.	Wu, M. C. _et al._ A systematic assessment of normalization approaches for the Infinium 450K methylation platform. _Epigenetics_ **9,** 318–29 (2014).
+29.	Yousefi, P. _et al._ Considerations for normalization of DNA methylation data by Illumina 450K BeadChip assay in population studies. _Epigenetics_ **8,** 1141–52 (2013).
 
-30.	Wang, T. _et al._ A systematic study of normalization methods for Infinium 450K methylation data using whole-genome bisulfite sequencing data. _Epigenetics_ **10,** 662–9 (2015).
+30.	Wu, M. C. _et al._ A systematic assessment of normalization approaches for the Infinium 450K methylation platform. _Epigenetics_ **9,** 318–29 (2014).
 
-31.	Leek, J. T., Johnson, W. E., Parker, H. S., Jaffe, A. E. & Storey, J. D. The SVA package for removing batch effects and other unwanted variation in high-throughput experiments. _Bioinformatics_ **28,** 882–3 (2012).
+31.	Wang, T. _et al._ A systematic study of normalization methods for Infinium 450K methylation data using whole-genome bisulfite sequencing data. _Epigenetics_ **10,** 662–9 (2015).
 
-32.	Teschendorff, A. E. _et al._ An epigenetic signature in peripheral blood predicts active ovarian cancer. _PLoS One_ **4,** e8274 (2009).
+32.	Leek, J. T., Johnson, W. E., Parker, H. S., Jaffe, A. E. & Storey, J. D. The SVA package for removing batch effects and other unwanted variation in high-throughput experiments. _Bioinformatics_ **28,** 882–3 (2012).
 
-33.	Johnson, W. E., Li, C. & Rabinovic, A. Adjusting batch effects in microarray expression data using empirical Bayes methods. _Biostatistics_ **8,** 118–27 (2007).
+33.	Teschendorff, A. E. _et al._ An epigenetic signature in peripheral blood predicts active ovarian cancer. _PLoS One_ **4,** e8274 (2009).
 
-34.	Houseman, E. A. _et al._ DNA methylation arrays as surrogate measures of cell mixture distribution. _BMC Bioinformatics_ **13,** (2012).
+34.	Johnson, W. E., Li, C. & Rabinovic, A. Adjusting batch effects in microarray expression data using empirical Bayes methods. _Biostatistics_ **8,** 118–27 (2007).
 
-35.	Reinius, L. E. _et al._ Differential DNA methylation in purified human blood cells: implications for cell lineage and studies on disease susceptibility. _PLoS One_ **7,** (2012).
+35.	Houseman, E. A. _et al._ DNA methylation arrays as surrogate measures of cell mixture distribution. _BMC Bioinformatics_ **13,** (2012).
 
-36.	Salas, L. A. _et al._ An optimized library for reference-based deconvolution of whole-blood biospecimens assayed using the Illumina HumanMethylationEPIC BeadArray. _Genome Biol_ **19,** 64 (2018).
+36.	Reinius, L. E. _et al._ Differential DNA methylation in purified human blood cells: implications for cell lineage and studies on disease susceptibility. _PLoS One_ **7,** (2012).
 
-37.	Houseman, E. A. _et al._ Reference-free deconvolution of DNA methylation data and mediation by cell composition effects. _BMC Bioinformatics_ **17,** 259 (2016).
+37.	Salas, L. A. _et al._ An optimized library for reference-based deconvolution of whole-blood biospecimens assayed using the Illumina HumanMethylationEPIC BeadArray. _Genome Biol_ **19,** 64 (2018).
 
-38.	Kaushal, A. _et al._ Comparison of different cell type correction methods for genome-scale epigenetics studies. _BMC Bioinformatics_ **18,** 216 (2017).
+38.	Houseman, E. A. _et al._ Reference-free deconvolution of DNA methylation data and mediation by cell composition effects. _BMC Bioinformatics_ **17,** 259 (2016).
 
-39.	Zou, J., Lippert, C., Heckerman, D., Aryee, M. & Listgarten, J. Epigenome-wide association studies without the need for cell-type composition. _Nat Methods_ **11,** 309–11 (2014).
+39.	Kaushal, A. _et al._ Comparison of different cell type correction methods for genome-scale epigenetics studies. _BMC Bioinformatics_ **18,** 216 (2017).
 
-40.	Rahmani, E. _et al._ Sparse PCA corrects for cell type heterogeneity in epigenome-wide association studies. _Nat Methods_ **13,** 443–445 (2016).
+40.	Zou, J., Lippert, C., Heckerman, D., Aryee, M. & Listgarten, J. Epigenome-wide association studies without the need for cell-type composition. _Nat Methods_ **11,** 309–11 (2014).
 
-41.	Rahmani, E. _et al._ Correcting for cell-type heterogeneity in DNA methylation: a comprehensive evaluation. _Nat Methods_ **14,** 218–219 (2017).
+41.	Rahmani, E. _et al._ Sparse PCA corrects for cell type heterogeneity in epigenome-wide association studies. _Nat Methods_ **13,** 443–445 (2016).
 
-42.	Zheng, S. C., Breeze, C. E., Beck, S. & Teschendorff, A. Identification of differentially methylated cell-types in Epigenome-Wide Association Studies. _Nat Genet Methods_ **15,** 1059–66 (2018).
+42.	Rahmani, E. _et al._ Correcting for cell-type heterogeneity in DNA methylation: a comprehensive evaluation. _Nat Methods_ **14,** 218–219 (2017).
 
-43.	Rahmani, E. _et al._ Cell-type-specific resolution epigenetics without the need for cell sorting or single-cell biology. _Nat Commun_ **10,** 3417 (2019).
+43.	Zheng, S. C., Breeze, C. E., Beck, S. & Teschendorff, A. Identification of differentially methylated cell-types in Epigenome-Wide Association Studies. _Nat Genet Methods_ **15,** 1059–66 (2018).
 
-44.	Hannum, G. _et al._ Genome-wide Methylation Profiles Reveal Quantitative Views of Human Aging Rates. _Mol Cell_ **49,** 359–67 (2013).
+44.	Rahmani, E. _et al._ Cell-type-specific resolution epigenetics without the need for cell sorting or single-cell biology. _Nat Commun_ **10,** 3417 (2019).
 
-45.	Horvath, S. DNA methylation age of human tissues and cell types. _Genome Biol_ **14,** R115 (2013).
+45.	Hannum, G. _et al._ Genome-wide Methylation Profiles Reveal Quantitative Views of Human Aging Rates. _Mol Cell_ **49,** 359–67 (2013).
 
-46.	Levine, M. E. _et al._ An epigenetic biomarker of aging for lifespan and healthspan. _Aging (Albany NY)_ **10,** 573–91 (2018).
+46.	Horvath, S. DNA methylation age of human tissues and cell types. _Genome Biol_ **14,** R115 (2013).
 
-47.	Horvath, S. _et al._ Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies. _Aging (Albany NY)_ **10,** 1758–75 (2018).
+47.	Levine, M. E. _et al._ An epigenetic biomarker of aging for lifespan and healthspan. _Aging (Albany NY)_ **10,** 573–91 (2018).
 
-48.	Lu, A. T. _et al._ DNA methylation GrimAge strongly predicts lifespan and healthspan. _Aging (Albany NY)_ **11,** 303-327 (2019).
+48.	Horvath, S. _et al._ Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies. _Aging (Albany NY)_ **10,** 1758–75 (2018).
+
+49.	Lu, A. T. _et al._ DNA methylation GrimAge strongly predicts lifespan and healthspan. _Aging (Albany NY)_ **11,** 303-327 (2019).
